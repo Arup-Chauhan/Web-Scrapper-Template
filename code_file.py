@@ -1,5 +1,5 @@
 #Right now it is for the initial inspired idea IMDB-Top 100
-# import requests
+import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -73,3 +73,4 @@ movies = pd.DataFrame({
 
 # Save the DataFrame to a CSV file
 movies.to_csv("top_100_movies.csv", index=False)
+print("CSV file generated with saved movie data")
